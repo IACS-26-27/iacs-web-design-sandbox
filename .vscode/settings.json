@@ -7,7 +7,10 @@
     "**/.vscode": true,
     "**/node_modules": true,
     "package.json": true,
-    "package-lock.json": true
+    "package-lock.json": true,
+    "**/.github": true,
+    ".gitignore": true,
+    "screenshots": true
   },
   "search.exclude": {
     "**/.git": true,

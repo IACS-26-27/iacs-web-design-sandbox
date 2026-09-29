@@ -5,7 +5,13 @@
       "label": "Start Live Server",
       "type": "shell",
       "command": "npx",
-      "args": ["live-server", "--no-browser", "."],
+      "args": [
+        "--yes",
+        "live-server",
+        "--no-browser",
+        "--port=5500",
+        "."
+      ],
       "problemMatcher": [],
       "group": {
         "kind": "build",

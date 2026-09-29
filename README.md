@@ -15,22 +15,28 @@ In this document, you will find:
 
 ## Running the Project
 
-1. Open the project in VS Code.
-2. Open the **Terminal** menu and choose **Run Task**, then select **Start Live Server**.
-3. Open the **Ports** panel and open port `5500` in the browser or editor preview.
-4. If this fails, you can [start from the terminal instead](#starting-from-the-terminal).
-   ![play-screenshot](screenshots/terminal-run-task.png)
-   ![play-screenshot](screenshots/task-start-live-server.png)
+1. Open the **Terminal** (use the "Terminal" tab at the bottom of the screen, or
+   choose **Terminal → New Terminal** from the menu).
+2. Type `npm start` and press Enter. This starts a local web server for your page.
+   ![Terminal Screenshot](./screenshots/terminal-github.png)
+3. Leave that terminal running while you work. Every time you save a file, your
+   page will reload automatically. (To stop the server, click in the terminal
+   and press `Ctrl+C`.)
+
+If typing the command doesn't work, you can also open the **Terminal** menu,
+choose **Run Task**, and select **Start Live Server**.
+![Run Task screenshot](screenshots/terminal-run-task.png)
+![Start Live Server screenshot](screenshots/task-start-live-server.png)
 
 ## Viewing Your Project
 
 ![Screenshot of Ports view](./screenshots/ports-github.png)
 
-- You should see a pop up asking if you want to open the page after you hit "play" to run your project. If you click on it, it will open your webpage in a new tab.
-- You can click on "Ports" at the bottom of the screen to see the web connection on your computer.
+- You should see a pop up asking if you want to open the page after you run `npm start`. If you click on it, it will open your webpage in a new tab.
+- You can also click on "Ports" (port `5500`) at the bottom of the screen to see the web connection on your computer.
 
   If you hover over the "Forwarded Address" column, you'll see a "side-by-side" icon that will show
-  the webpage inside your coding editor, or a "Globe" icon that will show the icon inside your web
+  the webpage inside your coding editor, or a "Globe" icon that will show the page inside your web
   browser in a new tab.
 
 ## Editing Your Project
@@ -39,7 +45,7 @@ In this document, you will find:
   ![img](./screenshots/github-file-editor.png)
 
 - **index.html**: This is your HTML file. Edit it to change the structure of your web page.
-- **style.css**: This is your CSS file. Modify it to change the styling of your web page.
+- **styles.css**: This is your CSS file. Modify it to change the styling of your web page.
 
 ### Files You Can Ignore
 
@@ -54,7 +60,7 @@ These files are hidden in the editor to keep the student workspace focused. They
 ## Adding Extensions
 
 You should be prompted to install extensions when this Codespace loads -- say yes and you'll
-get automatic code formatting set up as well as github copilot (an AI tool to try to help you code). (To get CoPilot you'll need to have verified your student account with github)
+get automatic code formatting set up as well as GitHub Copilot (an AI tool to try to help you code). (To get CoPilot you'll need to have verified your student account with github)
 
 ## Saving Your Work to Version Control
 
@@ -101,15 +107,5 @@ menu and selecting upload.
 
 If you put files in the wrong place, you can drag-and-drop to move them.
 
-Images you want to include in your project should be in the project root.
-I recommend organizing them inside of a separate "images" folder for easy
-file management.
-
-## Starting from the Terminal
-
-As an alternative to using the "Play" button, you can also
-type a command to run your project locally.
-
-1. Open the terminal in VS Code (use the "Terminal" tab at the bottom)
-2. Type `npm start` and press Enter. This will start a local server and open your project in a web browser.
-   ![Terminal Screenshot](./screenshots/terminal-github.png)
+Put the images you want to use in the `images` folder. Then you can use them
+in your page with a path like `images/my-picture.jpg`.
